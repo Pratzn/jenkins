@@ -3,10 +3,10 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                retry(3) {
+                retry(2) {
                     sh 'echo "Hello World"'
                 }
-                timeout(time: 3, unit: 'MINUTES') {
+                timeout(time: 30, unit: 'MINUTES') {
                     sh 'echo Yes'
                 }
                 sh 'echo Hello'
