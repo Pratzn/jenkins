@@ -9,7 +9,7 @@ pipeline {
                 timeout(time: 3, unit: 'MINUTES') {
                     sh 'echo Yes'
                 }
-                sh 'echo "Fail!"; exit 1'
+                sh 'echo Hello'
             }
             post {
 	                always {
