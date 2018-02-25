@@ -6,7 +6,7 @@ pipeline {
                 retry(2) {
                     sh 'echo "Hello World"'
                 }
-                timeout(time: 30, unit: 'MINUTES') {
+                timeout(time: 20, unit: 'MINUTES') {
                     sh 'echo Yes'
                 }
                 sh 'echo Hello'
