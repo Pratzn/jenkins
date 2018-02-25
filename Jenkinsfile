@@ -7,7 +7,7 @@ pipeline {
                     sh 'echo "Hello World"'
                 }
                 timeout(time: 3, unit: 'MINUTES') {
-                    sh './flakey-deploy.sh'
+                    sh 'echo Yes'
                 }
                 sh 'echo "Fail!"; exit 1'
             }
